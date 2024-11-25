@@ -1,0 +1,348 @@
+body{
+    --font-primary:"Amatic SC", sans-serif;
+    --font-secondry:"Inter", sans-serif;
+    --main-color: hsl( 0, 84%, 44% );
+    --main-color-parph:#7f7f90;
+    --main-color-parph-second:#7d7d7d;
+    --main-bg:#eee;
+    --main-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+section.home nav .header .mode span.fa-bars{
+    color: #333;
+}
+section.home{
+    background-color: var(--main-bg);
+}
+section.home nav .header .logo h1 a{
+    color:black;
+}
+section.home nav .header .logo h1 a span{
+    color:var(--main-color)
+}
+section.home nav .header .links ul li a{
+    text-decoration: none;
+    color: var(--main-color-parph);
+    font-size: 18px;
+    font-weight:600;
+}
+section.home nav{
+    background-color: #fff;
+    box-shadow: var(--main-shadow);
+    z-index: 100;
+
+}
+section.home nav .header .mode span{
+    cursor: pointer;
+}
+
+
+section.home .home-content{
+    width:80%;
+
+}
+section.home .home-content .row .col-md-6 .item h2{
+    font-family: var(--font-primary);
+    font-size: 55px;
+    font-weight: bolder;
+    color: #333;
+}
+section.home .home-content .row .col-md-6 .item p{
+    font-family: var(--font-secondry);
+    color: var(--main-color-parph);
+}
+section.home .home-content .row .col-md-6 .item .book-video a:nth-child(1){
+    padding:13px 25px 0;
+    border-radius:35px;
+    border-top-left-radius: 0;
+    background-color: var(--main-color);
+    color:#fff;
+}
+section.home .home-content .row .col-md-6 .item .book-video a:nth-child(2) span:nth-child(1){
+    width: 52px;
+    height: 52px;
+    background-image: linear-gradient(to right, var(--main-color ) 0 50%, transparent 50% 100%);
+    border-radius: 50%;
+}
+section.home .home-content .row .col-md-6 .item .book-video a:nth-child(2) span:nth-child(2){
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -22%;
+    transition: all 0.5s;
+}
+section.home .home-content .row .col-md-6 .item .book-video a:nth-child(2) span:nth-child(3){
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+    left: -14%;
+    transition: all 0.5s;
+}
+section.home .home-content .row .col-md-6 .item .book-video a:nth-child(2) span:nth-child(2):hover{
+    color: var(--main-color);
+}
+section.home .home-content .row .col-md-6 .item .book-video a:nth-child(2) span:nth-child(3):hover{
+    color: var(--main-color);
+}
+section.home .home-content .row .col-md-6 .item img{
+    width:450px;
+    border-radius: 50%;
+    box-shadow: var(--main-shadow);
+}
+/* section.home nav .header .links ul li a.home{
+    color: black;
+    border-bottom: 2px solid hsl( 0, 84%, 44% );
+} */
+
+section.nav-layer{
+    background-color: rgba(255, 255, 255,0.6);
+    z-index: 1000;
+    display: none;
+}
+section.nav-layer .nav-layer-links{
+    background-color: #fff;
+    width:400px;
+    display: none;
+}
+section.nav-layer .nav-layer-links ul li a{
+    text-decoration: none;
+    color: var(--main-color-parph);
+    font-size: 18px;
+    font-weight:600;
+}
+section.nav-layer .nav-layer-links span{
+    color: var(--main-color-parph);
+    display:inline-block;
+    margin-left: 350px;
+    cursor: pointer;
+}
+section.nav-layer .logo h1 span{
+    color:var(--main-color)
+}
+.shake {
+    animation: shake 0.5s infinite;
+}
+  
+@keyframes shake {
+    0% { transform: translate(0); }
+    20% { transform: translate(-5px, 0); }
+    40% { transform: translate(5px, 0); }
+    60% { transform: translate(-5px, 0); }
+    80% { transform: translate(5px, 0); }
+    100% { transform: translate(0); }
+}
+  
+
+
+
+
+/* chefs */
+section.chefs .container-fluid{
+    width: 960px;
+}
+section.chefs .container-fluid > p{
+    color: var(--main-color-parph);
+    font-weight: 500;
+}
+section.chefs .container-fluid h2{
+    font-family: var(--font-primary);
+    font-size: 50px;
+    font-weight: bolder;
+    color:#333;
+}
+section.chefs .container-fluid h2 span{
+    color: var(--main-color);
+}
+section.chefs .container-fluid .row .col-md-6 .item .img .wave{
+    position:absolute;
+    bottom: -15px;
+    width: 100%;
+    height: 80px;
+    background-image: url('../images/team-shape.svg');
+}
+section.chefs .container-fluid .row .col-md-6 .item{
+    box-shadow: var(--main-shadow);
+    transform: scale(1);
+    overflow: hidden;
+    transition: all 0.4s;
+}
+section.chefs .container-fluid .row .col-md-6 .item:hover{
+    transform: scale(1.05);
+}
+section.chefs .container-fluid .row .col-md-6 .item .img .layer-socials{
+    width: 60px;
+    height: 170px;
+    background-color: rgba(255, 255, 255, 0.3);
+    top:30px;
+    right:12px;
+    border-radius: 4px;
+    transform: translateX(130%);
+    transition: all 0.4s;
+    transition-delay: 0.4s;
+}
+section.chefs .container-fluid .row .col-md-6 .item:hover .layer-socials{
+    transform: translateX(0);
+}
+section.chefs .container-fluid .row .col-md-6 .item .img .layer-socials a{
+    text-decoration: none;
+}
+section.chefs .container-fluid .row .col-md-6 .item .img .layer-socials a span{
+    color: var(--main-color-parph);
+    transition: all 0.5s;
+}
+section.chefs .container-fluid .row .col-md-6 .item .img .layer-socials a span:hover{
+    color: black;
+}
+section.chefs .container-fluid .row .col-md-6 .item .item-content p:nth-child(2){
+    color: #7f7f90;
+    font-weight: 500;
+}
+section.chefs .container-fluid .row .col-md-6 .item .item-content p:nth-child(3){
+    font-style: italic;
+    color: #7f7f90;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/* gallery */
+
+section.gallery{
+    background-color: #eee;
+}
+section.gallery div:nth-child(1) > p{
+    color: var(--main-color-parph);
+    font-weight: 500;
+}
+section.gallery div h2{
+    font-family: var(--font-primary);
+    font-size: 50px;
+    font-weight: bolder;
+    color:#333;
+}
+section.gallery div h2 span{
+    color: var(--main-color);
+}
+
+
+/* contact */
+
+section.contact .container-fluid{
+    width: 950px;
+}
+section.contact div:nth-child(1) > p{
+    color: var(--main-color-parph);
+    font-weight: 500;
+}
+section.contact div h2{
+    font-family: var(--font-primary);
+    font-size: 50px;
+    font-weight: bolder;
+    color:#333;
+}
+section.contact div h2 span{
+    color: var(--main-color);
+}
+section.contact .container-fluid .map{
+    height:400px;
+}
+section.contact .container-fluid .info .col-md-6 .item{
+    background-color: #F5F5F5;
+}
+section.contact .container-fluid .info .col-md-6 .item .icon{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.contact .container-fluid .info .col-md-6 .item div:nth-child(2) h5{
+    color: var(--main-color-parph-second);
+    font-weight: bold;
+}
+section.contact .data{
+    box-shadow: var(--main-shadow);
+}
+section.contact .data form input{
+    box-shadow: 0 0 0 transparent !important;
+    color: #555;
+    font-weight: 400;
+}
+section.contact .data form input:focus{
+    border: 1px solid var(--main-color);
+}
+section.contact .data form textarea{
+    box-shadow: 0 0 0 transparent !important;
+    color: #555;
+    font-weight: 400;
+}
+section.contact .data form textarea:focus{
+    border: 1px solid var(--main-color);
+}
+section.contact .data form button{
+    border: 0 !important;
+    background-color: var(--main-color);
+    color: #F1F1F1;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+section.contact .data form .name-email{
+    width: 100%;
+}
+.errors{
+    border: 1px solid red !important;
+}
+
+section.contact .data form div p{
+    color:red;
+    text-align: left;
+}
+
+/* footer */
+footer{
+    background-image: url('../images/textured-metal-background.jpg');
+    background-size: 100% 100%;
+}
+footer .container .row .col-md-6.col-lg-3 .item .logo-footer img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+footer .container .row .col-md-6.col-lg-3 .item .logo-footer h4{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+}
+footer .container .row .col-md-6.col-lg-3 .item .logo-footer h4 span{
+    color: var(--main-color);
+}
+footer .container .row .col-md-6.col-lg-3 .item .social h6{
+    border-bottom: 2px solid #eee;
+}
+footer .container .row .col-md-6.col-lg-3 .item .social .icons{
+    font-size: 22px;
+}
+footer .container .row .col-md-12.col-lg-6 .item .send-subscribe input{
+    width:70% !important;
+    border-radius: 0 !important;
+}
+footer .container .row .col-md-12.col-lg-6 .item .send-subscribe a{
+    padding:7px 20px;
+    background-color: var(--main-color);
+}
+
+footer .container .row .col-md-6.col-lg-3 .item .get span{
+    color: var(--main-color);
+    font-size: 22px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+

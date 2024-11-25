@@ -1,0 +1,168 @@
+/* portfolio */
+section.gallery .container-fluid{
+    height: 900px;
+    width: 950px;
+}
+
+
+/* .section.gallery .container-fluid .row3 .col-sm-6 .row3-child a img{
+    width: 100%;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+} */
+/* .section.gallery .container-fluid .row3 .col-sm-6 .row3-child a:hover img{
+    transform: scale(1.03);
+} */
+
+section.gallery .container-fluid .row3 .img1{
+    position: absolute ;
+    top: 0;
+    left: 0;
+    margin-top: 25px;
+}
+section.gallery .container-fluid .row3 .img2{
+    position: absolute ;
+    top: 0;
+    left: 317px;
+    margin-top: 25px;
+}
+section.gallery .container-fluid .row3 .img3{
+    position: absolute ;
+    top: 0;
+    left: 634px;
+    margin-top: 25px;
+}
+section.gallery .container-fluid .row3 .img4{
+    position: absolute ;
+    top: 220px;
+    left: 0;
+    margin-top: 25px;
+}
+section.gallery .container-fluid .row3 .img5{
+    position: absolute ;
+    top: 220px;
+    left: 634px;
+    margin-top: 25px;
+}
+section.gallery .container-fluid .row3 .img6{
+    position: absolute ;
+    top: 538px;
+    left: 634px;
+    margin-top: 25px;
+}
+section.gallery .container-fluid .row3 .img7{
+    position: absolute ;
+    top: 514px;
+    left: 317px;
+    margin-top: 25px;
+}
+
+@media only screen and (max-width:991px){
+    section.gallery .container-fluid{
+        width: 750px;
+        height: 1500px;
+    }
+    section.gallery .container-fluid .row3 .col-sm-6.col-lg-4{
+        width:374px;
+    }
+    section.gallery .container-fluid .row3 .img1{
+        left: 0;
+    }
+    section.gallery .container-fluid .row3 .img2{
+        left: 375px;
+    }
+    section.gallery .container-fluid .row3 .img3{
+        left: 0;
+        top:258px;
+    }
+    section.gallery .container-fluid .row3 .img4{
+        left: 0;
+        top: 516px;
+    }
+    section.gallery .container-fluid .row3 .img5{
+        top: 610px;
+        left: 375px;
+    }
+    section.gallery .container-fluid .row3 .img6{
+        top: 985px;
+        left: 375px;
+    }
+    section.gallery .container-fluid .row3 .img7{
+        top: 1066px;
+        left: 0;
+    }
+    
+}
+@media only screen and (max-width:767px){
+    section.gallery .container-fluid{
+        width: 400px;
+        height: auto;
+        padding-bottom: 48px;
+    }
+    section.gallery .container-fluid .row3 .col-sm-6.col-lg-4{
+        width:100%;
+    }
+    section.gallery .container-fluid .row3 .img1{
+        position: unset ;
+        top: unset;
+        left: unset;
+    }
+    section.gallery .container-fluid .row3 .img2{
+        position: unset ;
+        top: unset;
+        left: unset;
+    }
+    section.gallery .container-fluid .row3 .img3{
+        position: unset ;
+        top: unset;
+        left: 0;
+    }
+    section.gallery .container-fluid .row3 .img4{
+        position: unset;
+        top: unset;
+        left: unset;
+    }
+    section.gallery .container-fluid .row3 .img5{
+        position: unset ;
+        top: unset;
+        left: unset;
+    }
+    section.gallery .container-fluid .row3 .img6{
+        position: unset ;
+        top: unset;
+        left: unset;
+    }
+    section.gallery .container-fluid .row3 .img7{
+        position: unset ;
+        top: unset;
+        left: unset;
+    }
+}
+@media only screen and (max-width:430px){
+    section.gallery .container-fluid{
+        width: unset;
+        padding: 14px !important;
+    }
+    section.gallery div h2{
+        font-size: 25px;
+    }
+}
+
+section.gallery .container-fluid .row .col-sm-6.col-lg-4 .img .gallery-img-layer{
+    background-color:rgba(0,0,0,0.6);
+    color:#fff !important;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    transform:translateY(105%);
+    transition: all 0.5s;
+}
+section.gallery .container-fluid .row .col-sm-6.col-lg-4 .img:hover .gallery-img-layer{
+    transform:translateY(0);
+}
+section.gallery .container-fluid .row .col-sm-6.col-lg-4 .img{
+    border: 4px solid #fff;
+}
